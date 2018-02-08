@@ -1,0 +1,11 @@
+---
+instance_type: "t2.micro" # edit as desired
+region: "ca-central-1" # edit as desired
+ami: "ami-9062d0f4"  # RHEL 7.3 - can change for other operating systems
+user: "ec2-user"
+vpc_subnet_id: "your subnet id"
+security_groups: ["your security group"]
+keypair_name: "<name of your keypair>"
+private_key_path: "<full-path-to-your-keypair, including the keypair name>"
+size: 30
+iam_role: "arn:aws:iam::118480750493:instance-profile/S3-Admin-Access"
